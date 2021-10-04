@@ -14,7 +14,13 @@ print(f"\nHello, {user_name}!\nWhat would you like to do?")
 operations = input("1. List items by warehouse\n2. Search an item and place an order\n3. Quit\nType the number of the operation: ")
 
 if operations == "1":
-    pass
+    print("\nItems in warehouse 1:")
+    for item in set(warehouse1):
+        print(f"- {item}")
+    print("\nItems in warehouse 2:")
+    for item in set(warehouse2):
+        print(f"- {item}")
+    print(f"\nThank you for your visit, {user_name}!")
 elif operations == "2":
     pass
 elif operations == "3":
