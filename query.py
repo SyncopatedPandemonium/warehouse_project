@@ -31,9 +31,11 @@ elif operations == "2":
     if chosen_item in warehouse1 and chosen_item in warehouse2:  # chosen item in both warehouses
         print(f"Location: Both warehouses")
         if amount_available2 > amount_available1:
-            print(f"Maximum availability: {amount_available2} in Warehouse 2")
+            print(f"Maximum availability: {amount_available2} in Warehouse 2.")
+        elif amount_available2 < amount_available1:
+            print(f"Borh warehouses have the same amount of item: {amount_available1} in Warehouse 1.")
         else:
-            print(f"Maximum availability: {amount_available1} in Warehouse 1")
+            print(f"Maximum availability: {amount_available1}.")
     elif chosen_item in warehouse1:  # chosen item in warehouse 1
         print(f"Location: Warehouse 1")
     elif chosen_item in warehouse2:  # chosen item in warehouse 2
