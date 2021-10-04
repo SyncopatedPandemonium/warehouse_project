@@ -9,6 +9,17 @@ for item in warehouse1:
 
 from data import warehouse1, warehouse2
 
+user_name = input("What is your user name? ")
+print(f"\nHello, {user_name}!\nWhat would you like to do?")
+operations = input("1. List items by warehouse\n2. Search an item and place an order\n3. Quit\nType the number of the operation: ")
+
+if operations == "1":
+    pass
+elif operations == "2":
+    pass
+elif operations == "3":
+    pass
+
 # YOUR CODE STARTS HERE
 
 # Get the user name
