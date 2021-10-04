@@ -12,8 +12,14 @@ from data import warehouse1, warehouse2
 user_name = ""
 while len(user_name) == 0:
     user_name = input("What is your user name? ")
-print(f"\nHello, {user_name}!\nWhat would you like to do?")
-operations = input("1. List items by warehouse\n2. Search an item and place an order\n3. Quit\nType the number of the operation: ")
+print(f"\nHello, {user_name}!\n"
+    "What would you like to do?")
+
+operations = input(
+    "1. List items by warehouse\n"
+    "2. Search an item and place an order\n"
+    "3. Quit\nType the number of the operation: "
+    )
 
 if operations == "1":
     print("\nItems in warehouse 1:")
@@ -36,7 +42,6 @@ elif operations == "2":
             print(f"Maximum availability: {amount_available1} in Warehouse 1.")
         else:
             print(f"Borh warehouses have the same amount of item: {amount_available1}.")
-            
     elif chosen_item in warehouse1:  # chosen item in warehouse 1
         print(f"Location: Warehouse 1")
     elif chosen_item in warehouse2:  # chosen item in warehouse 2
